@@ -1,0 +1,96 @@
+/* TicketCard.css */
+.ticket-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .ticket-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .ticket-title {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    order: 2; /* Ensures title stays on the right */
+  }
+  
+  .ticket-id {
+    font-size: 14px;
+    color: #999;
+    order: 1; /* Ensures ID stays on the left */
+  }
+  
+  .ticket-body {
+    margin-bottom: 10px;
+  }
+  
+  .ticket-body p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .ticket-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .ticket-priority, .ticket-status, .ticket-tag {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ticket-priority img, .ticket-status img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .ticket-tag {
+    display: flex;
+    align-items: center;
+  }
+  
+  .disc-bullet {
+    display: inline-block;
+    width: 12px; /* Size suitable for tag text */
+    height: 12px;
+    background-color: #ccc; /* Gray color */
+    border-radius: 50%; /* Make it a circle */
+  }
+  
+  .tag-text {
+    font-size: 14px;
+    color: #333;
+    margin-left: 8px; /* Spacing between bullet and tag text */
+  }
+  
+  .ticket-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .ticket-user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
+  

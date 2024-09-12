@@ -1,0 +1,177 @@
+/* App.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+  }
+  
+  .app-container {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .header label {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .header select {
+    margin-right: 20px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  /* styles.css */
+
+.kanban-board {
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  padding: 10px;
+  gap: 10px; /* Space between columns */
+}
+
+.kanban-column {
+  flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+  min-width: 200px; /* Minimum width for columns */
+  max-width: 300px; /* Optional: max width for columns */
+  background-color: #f4f4f4; /* Background color for columns */
+  border: 1px solid #ddd; /* Border for columns */
+  border-radius: 5px; /* Rounded corners for columns */
+  padding: 10px;
+}
+
+.kanban-column h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .kanban-board {
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+  }
+}
+
+  
+  .ticket-card {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .ticket-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .ticket-card h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .ticket-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .priority-urgent {
+    border-left: 5px solid red;
+  }
+  
+  .priority-high {
+    border-left: 5px solid orange;
+  }
+  
+  .priority-medium {
+    border-left: 5px solid yellow;
+  }
+  
+  .priority-low {
+    border-left: 5px solid green;
+  }
+  
+  .priority-no-priority {
+    border-left: 5px solid gray;
+  }
+  .app-container {
+    padding: 20px;
+  }
+  
+  .button-container {
+    position: relative;
+  }
+  
+  .display-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid #000; /* Border for the button */
+    background-color: #fff; /* Background color for the button */
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners for the button */
+    outline: none;
+  }
+  
+  .button-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  .options-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 2px solid #000; /* Border for the dropdown */
+    background-color: #fff; /* Background color for the dropdown */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    z-index: 1000; /* Ensure dropdown is above other content */
+  }
+/* styles.css */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between the two lines */
+}
+
+.grouping,
+.ordering {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+}
+
+.grouping label,
+.ordering label {
+  margin-right: 10px; /* Space between label and select */
+  font-weight: bold;
+}
+
+.grouping select,
+.ordering select {
+  padding: 5px;
+  font-size: 14px;
+}
+  
